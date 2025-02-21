@@ -10,6 +10,15 @@ Tools like GitHub Actions, GitLab CI and others make git scraping adaptable to d
 
 This template includes a sample workflow to demonstrate the core git scraping capabilities. Read on to learn how to customize it!
 
+## Modifications to The Template
+
+URL Change: The request now targets the sports section of the site by using https://www.thedp.com/section/sports.
+
+Search Rule Update:
+Instead of looking for an <a> tag with the frontpage-link class, it now looks for a <h3> tag with a standard-link class using soup.find("h3", class_="standard-link").
+
+These modifications ensure that we can succesfully extract the first sports headline from the Daily Pennsylvanian's Sports Section.
+
 ## Overview
 
 The workflow defined in `.github/workflows/scrape.yaml` runs on a defined schedule to:
