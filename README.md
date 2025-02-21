@@ -15,9 +15,8 @@ This template includes a sample workflow to demonstrate the core git scraping ca
 URL Change: The request now targets the sports section of the site by using https://www.thedp.com/section/sports.
 
 Search Rule Update:
-Instead of looking for an <a> tag with the frontpage-link class, it now looks for a <h3> tag with a standard-link class using soup.find("h3", class_="standard-link").
-
-These modifications ensure that we can succesfully extract the first sports headline from the Daily Pennsylvanian's Sports Section.
+- Instead of looking for an <a> tag with the frontpage-link class, it now looks for a <h3> tag with a standard-link class using "soup.find("h3", class_="standard-link")".
+- These modifications ensure that we can succesfully extract the first sports headline from the Daily Pennsylvanian's Sports Section.
 
 ## Overview
 
