@@ -10,6 +10,17 @@ Tools like GitHub Actions, GitLab CI and others make git scraping adaptable to d
 
 This template includes a sample workflow to demonstrate the core git scraping capabilities. Read on to learn how to customize it!
 
+### Schedule Explanation
+
+The cron expression `0 20 * * *` means the job runs every day at 8:00 PM UTC. The five fields in the cron syntax represent the following:  
+1. **Minute (0-59):** `0` Job starts at top of the hour.  
+2. **Hour (0-23):** `20` means 8PM (think military time).  
+3. **Day of Month (1-31):** `*` means every day of the month.  
+4. **Month (1-12):** `*` means every month of the year.  
+5. **Day of Week (0-6):** `*` means every day of the week.
+
+I modified the expression to read `0 10,20 * * *` meaning it runs at 10:00 AM and 8:00 PM daily. 
+
 ## Modifications to The Template
 
 ### URL Change
