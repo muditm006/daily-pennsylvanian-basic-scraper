@@ -5,10 +5,11 @@ verify_ssl = true
 
 [packages]
 bs4 = "*"
-loguru = "*"
 pytz = "*"
-requests = "*"
 waybackpy = "*"
+requests = "*"
+beautifulsoup4 = "*"
+loguru = "*"
 
 [dev-packages]
 ipykernel = "*"
